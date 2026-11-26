@@ -30,7 +30,6 @@ menu.addEventListener('click',()=>{const open=navigation.classList.toggle('open'
 navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
 document.addEventListener('keydown',event=>{if(event.key==='Escape')closeMenu();});
 window.addEventListener('resize',()=>{if(window.innerWidth>1100)closeMenu();});
-document.querySelector('#year').textContent=new Date().getFullYear();
 
 const dialog=document.querySelector('#detail-dialog');
 const dialogContent=document.querySelector('#dialog-content');
